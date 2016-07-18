@@ -1,7 +1,7 @@
 {
-  "name": "Dashboard",
+  "name": "redux-express-starter",
   "version": "1.0.0",
-  "description": "Dashboard built with redux",
+  "description": "Redux express starter kit",
   "main": "index.js",
   "scripts": {
     "start": "webpack --progress --colors --watch -d",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://Mohithg@bitbucket.org/Mohithg/dashboard.git"
+    "url": "https://github.com/mohithg/redux-express-starter"
   },
-  "author": "",
-  "license": "OWN",
+  "author": "Mohith G <mohithgm@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "css-loader": "^0.23.1",
