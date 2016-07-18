@@ -1,7 +1,7 @@
 /**
  * Importing various routes modules
  */
-var test = require('./modules/test/routes');
+var test = require('./modules/test');
 
 /**
  * Adding them to apiRouter
