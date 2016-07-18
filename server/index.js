@@ -14,7 +14,7 @@ serverRoutes(apiRouter);
  * Router for Client
  */
 router.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '../', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../', 'client', 'main.html'));
 });
 
 /**
