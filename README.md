@@ -36,3 +36,4 @@ For now code watch runs only for client side so for client side changes you need
 
 ##TODOS:
 - Add nodemon to watch for server code changes and restart server
+- Add tests
