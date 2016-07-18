@@ -5,7 +5,7 @@ There are many starter kits out there, but when I started to use one for me, man
 This starter kit is mainly built to use redux, REST API with express.
 
 ## Features
-- Supports ES6
+- Supports ES6 (Client, However if you install node 6 you will have ES6 support in backend also) else use babel
 - Uses webpack for building
 - Client side routing with 'react-router'
 - Server side routing for express (REST API)
