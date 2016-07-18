@@ -31,6 +31,15 @@ npm run start
 ```
 npm run server
 ```
+- Goto your browser
+To get the front end stuff, however you can configure routes in client/modules/core/routes.js
+```
+http://localhost:8000/some
+```
+For api, the entry point is /api, for now I have created a sample api at /api/test
+```
+http://localhost:8000/api/test
+```
 
 For now code watch runs only for client side so for client side changes you need not perform a server restart
 
