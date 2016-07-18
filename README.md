@@ -9,6 +9,7 @@ This starter kit is mainly built to use redux, REST API with express.
 - Uses webpack for building
 - Client side routing with 'react-router'
 - Server side routing for express (REST API)
+- Mongoose support for MongoDB
 - eslint for linting
 - Clean organization of modules
 
@@ -42,6 +43,8 @@ http://localhost:8000/api/test
 ```
 
 For now code watch runs only for client side so for client side changes you need not perform a server restart
+
+
 
 ##TODOS:
 - Add nodemon to watch for server code changes and restart server
