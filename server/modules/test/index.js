@@ -1,27 +1,31 @@
-var Test = require('./controllers');
+import Test from './controllers';
+import responder from '../core/middlewares/responder';
+
+let test = {
+  getAll: (req, res) => {
+    Test.getAll( (err, data) => {
+      responder(req, res, err, data);
+    });
+  },
+  save: (req, res) => {
+    Test.save( 'Mohith', (err) => {
+      if (err) {
+        err.msg = 'Username already exists';
+        responder(req, res, err);
+      } else {
+        let data = 'Success';
+        responder(req, res, err, data);
+      }
+    });
+  }
+};
 
 /**
  * Implement router for particular module
  */
-var test = function (app) {
-  app.get('/test', function (req,res) {
-    Test.get(function (err, data) {
-      if (err) {
-        res.json(err);
-      } else {
-        res.json(data);
-      }
-    });
-  });
-  app.get('/save', function (req,res) {
-    Test.save('Reddy', function (err) {
-      if (err) {
-        res.json(err);
-      } else {
-        res.json({save: 'Success'});
-      }
-    });
-  });
+let router = (app) => {
+  app.get('/tests', test.getAll);
+  app.get('/test/save', test.save);
 };
 
-module.exports = test;
+export default router;

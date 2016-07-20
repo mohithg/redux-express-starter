@@ -1,12 +1,12 @@
 /**
  * Importing various routes modules
  */
-var test = require('./modules/test');
+import test from './modules/test';
 
 /**
  * Adding them to apiRouter
  */
-var router = function (app) {
+var router = (app) => {
   test(app);
 };
 
